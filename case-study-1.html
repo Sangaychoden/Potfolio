@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Case Study – Bhutan News App</title>
+
+  <!-- CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f7f9fc;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .case-container {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .sub-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+      line-height: 1.6;
+    }
+
+    .persona-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .persona-img {
+      border-radius: 14px;
+      width: 100%;
+      object-fit: cover;
+      height: 260px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .divider {
+      width: 100%;
+      height: 2px;
+      background: #ececec;
+      margin: 30px 0;
+    }
+
+    /* BACK BUTTON STYLE */
+    .back-btn {
+      display: inline-block;
+      background: #f1f3f7;
+      padding: 10px 18px;
+      border-radius: 12px;
+      font-weight: 500;
+      color: #333;
+      text-decoration: none;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      transition: 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background: #e2e6ee;
+      transform: translateY(-2px);
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <main class="main section pt-5 pb-5">
+    <div class="container">
+
+      <div class="case-container" data-aos="fade-up">
+
+        <!-- ⭐ BACK BUTTON ADDED HERE -->
+        <a href="index.html" class="back-btn"><i class="bi bi-arrow-left"></i> Back</a>
+
+        <h2 class="section-title">Bhutan News App – Case Study</h2>
+        <p class="lead">A complete UI/UX & development case study focused on delivering a clean, modern, and user-centered digital news experience for Bhutan.</p>
+
+        <!-- Problem Statement -->
+        <h3 class="sub-title">📌 Problem Statement</h3>
+        <p>
+          Users in Bhutan need a reliable and visually clean digital news experience. Current platforms lack personalization features like favourites and commenting. Editors struggle with complex posting workflows.
+          This project provides a dual interface: one for readers and one for editors.
+        </p>
+
+        <div class="divider"></div>
+
+        <!-- Goals -->
+        <h3 class="sub-title">🎯 Goals & Objectives</h3>
+
+        <h5>User Goals</h5>
+        <ul>
+          <li>View Bhutan news easily</li>
+          <li>Save favourite news</li>
+          <li>Comment and interact</li>
+          <li>Simple login & signup</li>
+        </ul>
+
+        <h5>Admin Goals</h5>
+        <ul>
+          <li>Add news with images</li>
+          <li>Edit + delete existing news</li>
+          <li>Manage comments</li>
+          <li>View analytics</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <!-- Research -->
+        <h3 class="sub-title">🧪 User Research</h3>
+        <ul>
+          <li>Online survey (10–20 people)</li>
+          <li>1:1 Interviews (3–5 users)</li>
+          <li>Competitor analysis (Kuensel, BBS, social pages)</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <!-- User Insights -->
+        <h3 class="sub-title">💡 User Insights</h3>
+
+        <h5>For Readers</h5>
+        <ul>
+          <li>Prefer clean homepage with quick scrolling</li>
+          <li>Want image + headline previews</li>
+          <li>Trustworthiness is very important</li>
+          <li>Prefer minimal clutter</li>
+          <li>Often save articles for later</li>
+        </ul>
+
+        <h5>For Admins</h5>
+        <ul>
+          <li>Need a simple dashboard</li>
+          <li>Easy image uploads</li>
+          <li>Smooth edit/delete workflow</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <!-- User Persona -->
+        <h3 class="sub-title">👤 User Persona</h3>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="persona-card">
+              <img src="assets/img/portfolio/persona1.png" class="persona-img" alt="Persona Image 1">
+              <ul class="mt-3">
+                <li><strong>Name:</strong> Bhutanese Young Reader</li>
+                <li><strong>Age:</strong> 18–25</li>
+                <li><strong>Goal:</strong> Read clean, accurate news quickly</li>
+                <li><strong>Pain Points:</strong> too much clutter, no favourite system</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="persona-card">
+              <img src="assets/img/portfolio/persona2.png" class="persona-img" alt="Persona Image 2">
+              <ul class="mt-3">
+                <li><strong>Name:</strong> News Editor / Admin</li>
+                <li><strong>Age:</strong> 25–40</li>
+                <li><strong>Goal:</strong> Publish news fast & easily</li>
+                <li><strong>Pain Points:</strong> complex dashboards, hard-to-edit posts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- LOW-FI WIREFRAMES -->
+        <h3 class="sub-title">📐 Low-Fidelity Wireframes</h3>
+        <p>Early layout exploration for homepage, articles, and user interactions.</p>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-6">
+            <div class="persona-card">
+              <img src="assets/img/portfolio/lowfi1.png" class="persona-img">
+              <p class="text-center mt-3">Low-Fi – Homepage</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="persona-card">
+              <img src="assets/img/portfolio/lowfi2.png" class="persona-img">
+              <p class="text-center mt-3">Low-Fi – Article Layout</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mb-4">
+          <a href="https://www.figma.com/" target="_blank" class="figma-btn">
+            🔗 View Low-Fidelity Wireframes
+          </a>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- HIGH-FI -->
+        <h3 class="sub-title">🎨 High-Fidelity Designs</h3>
+        <p>Final polished UI screens created using Figma.</p>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-6">
+            <div class="persona-card">
+              <img src="assets/img/portfolio/hifi1.png" class="persona-img">
+              <p class="text-center mt-3">Hi-Fi – Homepage</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="persona-card">
+              <img src="assets/img/portfolio/hifi2.png" class="persona-img">
+              <p class="text-center mt-3">Hi-Fi – Article Detail Screen</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mb-4">
+          <a href="https://www.figma.com/" target="_blank" class="figma-btn">
+            🔗 View Full Figma Prototype
+          </a>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- FLOWS -->
+        <h3 class="sub-title">🔀 User Flows</h3>
+
+        <h5>Reader Flows</h5>
+        <ul>
+          <li>Login → Homepage → Read</li>
+          <li>Add to favourites</li>
+          <li>View favourites list</li>
+          <li>Write and view comments</li>
+        </ul>
+
+        <h5>Admin Flows</h5>
+        <ul>
+          <li>Login → Dashboard</li>
+          <li>Create news post</li>
+          <li>Edit/delete post</li>
+          <li>Manage comments</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <!-- ITERATIONS -->
+        <h3 class="sub-title">🎨 Iterations & Design Rationale</h3>
+        <ul>
+          <li>Bigger images improved readability</li>
+          <li>Clearer typography increased engagement</li>
+          <li>Heart icon improved favourite visibility</li>
+          <li>Simplified admin menu for faster actions</li>
+          <li>Added more spacing & white space for clarity</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <!-- REFLECTION -->
+        <h3 class="sub-title">📝 Reflections</h3>
+        <ul>
+          <li>Spacing & typography dramatically improve UX</li>
+          <li>Two user types = deeper UX thinking</li>
+          <li>Small UI refinements increased user happiness</li>
+          <li>Early testing saved redesign time</li>
+        </ul>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>
