@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Case Study – Travel Diary App</title>
+  <title>Case Study – Bus Booking App</title>
 
   <!-- CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -100,14 +100,15 @@
         <!-- BACK BUTTON -->
         <a href="index.html" class="back-btn"><i class="bi bi-arrow-left"></i> Back</a>
 
-        <h2 class="section-title">Travel Diary App – Case Study</h2>
-        <p class="lead">A modern mobile-first platform where travelers can upload photos, write descriptions, explore others’ journeys, and interact through comments while admins ensure a safe environment.</p>
+        <h2 class="section-title">Bus Booking App – Case Study</h2>
+        <p class="lead">A streamlined booking app where passengers can easily select routes, dates, and seat numbers while admins manage buses and bookings efficiently.</p>
 
         <!-- Problem Statement -->
         <h3 class="sub-title">📌 Problem Statement</h3>
         <p>
-          Travelers want a simple, dedicated platform to document memories and share their journeys. Existing social media apps are crowded, lack structure, and make it difficult to organize travel stories.
-          The Travel Diary App provides an elegant way to upload stories, interact, and maintain a safe digital space.
+          Bus travellers in Bhutan struggle with long queues, unclear seat availability, and manual booking systems. 
+          Operators face challenges keeping track of bookings and preventing double-seat allocation.
+          The Bus Booking App solves these issues by digitizing route selection, seat maps, and booking confirmation.
         </p>
 
         <div class="divider"></div>
@@ -117,18 +118,19 @@
 
         <h5>User Goals</h5>
         <ul>
-          <li>Upload travel photos with descriptions</li>
-          <li>Share memories with friends or followers</li>
-          <li>View and interact with others’ travel stories</li>
-          <li>Comment on posts</li>
-          <li>Report inappropriate content</li>
+          <li>View available buses and travel dates</li>
+          <li>Select seat from real-time seat map</li>
+          <li>Book seat with name and phone number</li>
+          <li>Get instant confirmation</li>
+          <li>Avoid long queues and manual errors</li>
         </ul>
 
         <h5>Admin Goals</h5>
         <ul>
-          <li>Review reported content</li>
-          <li>Manage or delete harmful posts/comments</li>
-          <li>Maintain a safe travel community</li>
+          <li>Add buses with route, date, and seat count</li>
+          <li>Edit or remove buses</li>
+          <li>View all bookings per bus and date</li>
+          <li>Cancel bookings when needed</li>
         </ul>
 
         <div class="divider"></div>
@@ -136,9 +138,10 @@
         <!-- Research -->
         <h3 class="sub-title">🧪 User Research</h3>
         <ul>
-          <li>Online survey (15–30 travelers)</li>
-          <li>1:1 Interviews with frequent travelers</li>
-          <li>Competitor analysis (Instagram, TripAdvisor, Pinterest)</li>
+          <li>Observation of booking queues at bus stations</li>
+          <li>Interviews with 10 frequent bus travellers</li>
+          <li>Discussions with 3 bus company operators</li>
+          <li>Review of existing outdated booking systems</li>
         </ul>
 
         <div class="divider"></div>
@@ -146,20 +149,18 @@
         <!-- Insights -->
         <h3 class="sub-title">💡 User Insights</h3>
 
-        <h5>For Travelers</h5>
+        <h5>For Passengers</h5>
         <ul>
-          <li>Want a clean, gallery-focused layout</li>
-          <li>Prefer short travel stories paired with images</li>
-          <li>Value safe, supportive community interactions</li>
-          <li>Need easy edit/delete features for posts</li>
-          <li>Want reporting tools to handle unwanted content</li>
+          <li>Prefer a clear seat layout to choose seats</li>
+          <li>Want transparency on booked vs available seats</li>
+          <li>Need a quick booking process without confusion</li>
         </ul>
 
         <h5>For Admins</h5>
         <ul>
-          <li>Need clear visibility of reported posts</li>
-          <li>Easy delete + review tools</li>
-          <li>Require simple categorization of reports</li>
+          <li>Need simple bus creation tools</li>
+          <li>Require complete booking visibility</li>
+          <li>Prefer lightweight, non-technical dashboard</li>
         </ul>
 
         <div class="divider"></div>
@@ -172,10 +173,10 @@
             <div class="persona-card">
               <img src="assets/img/portfolio/persona3.png" class="persona-img">
               <ul class="mt-3">
-                <li><strong>Name:</strong> Dorji Yangzom- Student Traveler</li>
-                <li><strong>Age:</strong> 22</li>
-                <li><strong>Goal:</strong> Document trips beautifully</li>
-                <li><strong>Pain Points:</strong> Disorganized social media, cluttered UI</li>
+                <li><strong>Name:</strong> Sonam Choden – Passenger</li>
+                <li><strong>Age:</strong> 24</li>
+                <li><strong>Goal:</strong> Book bus seats quickly with no uncertainty</li>
+                <li><strong>Pain Points:</strong> No visibility of available seats, manual errors at counters</li>
               </ul>
             </div>
           </div>
@@ -184,10 +185,10 @@
             <div class="persona-card">
               <img src="assets/img/portfolio/persona4.png" class="persona-img">
               <ul class="mt-3">
-                <li><strong>Name:</strong> Pema Dorji – Admin Moderator</li>
-                <li><strong>Age:</strong>34 </li>
-                <li><strong>Goal:</strong> Maintain positive environment</li>
-                <li><strong>Pain Points:</strong> Too much spam, difficult moderation tools</li>
+                <li><strong>Name:</strong> Tshering Dorji – Bus Operator</li>
+                <li><strong>Age:</strong> 38</li>
+                <li><strong>Goal:</strong> Manage bookings without double allocation</li>
+                <li><strong>Pain Points:</strong> Difficult manual record-keeping</li>
               </ul>
             </div>
           </div>
@@ -197,26 +198,26 @@
 
         <!-- Wireframes -->
         <h3 class="sub-title">📐 Low-Fidelity Wireframes</h3>
-        <p>Early sketches to validate user flow and structure before high-fidelity design.</p>
+        <p>Initial wireframe sketches to validate seat map layout, booking flow, and admin management screens.</p>
 
         <div class="row g-4 mb-4">
           <div class="col-lg-6">
             <div class="persona-card">
-              <img src="assets/img/lofi1.png" class="persona-img">
-              <p class="text-center mt-3">Low-Fi – Travel Feed</p>
+              <img src="assets/img/lofi3.png" class="persona-img">
+              <p class="text-center mt-3">Low-Fi – Admin</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="persona-card">
-              <img src="assets/img/lofi2.png" class="persona-img">
-              <p class="text-center mt-3">Low-Fi – Create Post</p>
+              <img src="assets/img/lofi5.png" class="persona-img">
+              <p class="text-center mt-3">Low-Fi – User</p>
             </div>
           </div>
         </div>
 
         <div class="text-center mb-5">
-          <a href="https://www.figma.com/design/W8CTzNhnsDTYVpiVvqOoBv/Travel-Diary-LOFI?node-id=0-1&p=f&t=42NipQuUlS5l6dxr-0" target="_blank" class="btn btn-outline-primary px-4 py-2" style="border-radius: 10px;">
+          <a href="https://www.figma.com/design/mqXSyeDEAwMN3iSh845B02/BusbookingLOFI?node-id=0-1&t=42NipQuUlS5l6dxr-1" target="_blank" class="btn btn-outline-primary px-4 py-2" style="border-radius: 10px;">
             🔗 View Low-Fidelity Wireframes
           </a>
         </div>
@@ -225,26 +226,26 @@
 
         <!-- High Fidelity -->
         <h3 class="sub-title">🎨 High-Fidelity Designs</h3>
-        <p>The final UI emphasizes simplicity, clean layout, and photo-first visual hierarchy.</p>
+        <p>A clean UI with blue theme, clear seat status indicators, structured bus list, and simple admin dashboard.</p>
 
         <div class="row g-4 mb-4">
           <div class="col-lg-6">
             <div class="persona-card">
-              <img src="assets/img/HIFI1.png" class="persona-img">
-              <p class="text-center mt-3">Hi-Fi – Feed Screen</p>
+              <img src="assets/img/hifi3.png" class="persona-img">
+              <p class="text-center mt-3">Hi-Fi – Admin</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="persona-card">
-              <img src="assets/img//HIFI2.png" class="persona-img">
-              <p class="text-center mt-3">Hi-Fi – Post Detail</p>
+              <img src="assets/img/hifi5.png" class="persona-img">
+              <p class="text-center mt-3">Hi-Fi – User</p>
             </div>
           </div>
         </div>
 
         <div class="text-center mb-5">
-          <a href="https://www.figma.com/design/spWmRhVDamZ5p8Yd2rVDmV/travel-diary-HIFI?node-id=1-242&t=42NipQuUlS5l6dxr-1" target="_blank" class="btn btn-primary px-4 py-2" style="border-radius: 10px;">
+          <a href="https://www.figma.com/design/ncCH9kPxDYNMh4s4f7S05g/BusbookingHIFI?node-id=0-1&t=0cGDWxXzjIByuGH3-1" target="_blank" class="btn btn-primary px-4 py-2" style="border-radius: 10px;">
             🔗 View Full Figma Prototype
           </a>
         </div>
@@ -254,18 +255,19 @@
         <!-- Flows -->
         <h3 class="sub-title">🔀 User Flows</h3>
 
-        <h5>Traveler Flows</h5>
+        <h5>Passenger Flow</h5>
         <ul>
-          <li>Upload → Add Description → Publish</li>
-          <li>Scroll feed → View → Comment</li>
-          <li>Report inappropriate posts</li>
+          <li>Select Bus → Choose Date → View Seat Map</li>
+          <li>Select Seat → Enter Details → Confirm Booking</li>
+          <li>Receive Booking Confirmation</li>
         </ul>
 
-        <h5>Admin Flows</h5>
+        <h5>Admin Flow</h5>
         <ul>
-          <li>Dashboard → Review reports</li>
-          <li>Delete or keep</li>
-          <li>Monitor community</li>
+          <li>Add Bus → Set Route, Date, Seats</li>
+          <li>View Real-Time Bookings</li>
+          <li>Edit or Delete Buses</li>
+          <li>Cancel Bookings when necessary</li>
         </ul>
 
         <div class="divider"></div>
@@ -273,10 +275,10 @@
         <!-- Iterations -->
         <h3 class="sub-title">🎨 Iterations & Design Rationale</h3>
         <ul>
-          <li>Added stronger photo hierarchy for travelers</li>
-          <li>Introduced clearer report button after feedback</li>
-          <li>Enhanced admin dashboard with categorized reports</li>
-          <li>Improved spacing for cleaner feed</li>
+          <li>Added seat legend for clarity (Available / Selected / Booked)</li>
+          <li>Improved seat spacing for readability</li>
+          <li>Added booking confirmation message</li>
+          <li>Simplified admin edit and delete features</li>
         </ul>
 
         <div class="divider"></div>
@@ -284,10 +286,10 @@
         <!-- Reflection -->
         <h3 class="sub-title">📝 Reflections</h3>
         <ul>
-          <li>Visual hierarchy is essential for image-heavy apps</li>
-          <li>Moderation tools build trust in small communities</li>
-          <li>User testing revealed hidden usability issues early</li>
-          <li>Balancing simplicity with features was the biggest challenge</li>
+          <li>Real-time seat visibility greatly improves UX</li>
+          <li>Simple admin tools increase adoption by operators</li>
+          <li>User testing highlighted the need for a clear seat legend</li>
+          <li>Building both admin and user flows required balanced simplicity</li>
         </ul>
 
       </div>
