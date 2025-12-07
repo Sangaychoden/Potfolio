@@ -2,6 +2,72 @@
 <html lang="en">
 
 <head>
+  <style>
+/* ===== SKILLS SECTION STYLE ===== */
+.skills-grid {
+  padding: 80px 0;
+  background: #f5f8ff;
+}
+
+.skills-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills-title h2 {
+  font-weight: 700;
+}
+
+.skills-box {
+  background: linear-gradient(135deg, #eef4ff, #f9faff);
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.skills-box h3 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.skills-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.skill-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px 10px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+.skill-card img {
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.skill-card span {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .skills-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Personal Portfolio</title>
@@ -43,16 +109,20 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
+      <a href="https://www.facebook.com/share/1BDDiVnBKr/?mibextid=wwXIfr" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/schoden_00?igsh=eTU0emdpamVpN3kw&utm_source=qr" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/sangay-choden-1a1788326/" class="linkedin"><i class="bi bi-linkedin"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#home" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <!-- <li><a href="#skills"><i class="bi bi-tools navicon"></i> Skills</a></li> -->
+<li><a href="#skills"><i class="bi bi-tools navicon"></i> Skills</a></li>
+
+        <!-- <li><a href="#skills"><i class="bi bi-person navicon"></i> Skills</a></li> -->
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
@@ -68,9 +138,12 @@
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Hi, I’m a UI/UX Designer.</h2>
-        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-      </div>
+  <h2>Hi, I’m a UI/UX Designer & Full-Stack Developer.</h2>
+  <p>I'm <span class="typed" data-typed-items="UI/UX Designer, Full-Stack Developer, Freelancer">UI/UX Designer</span>
+    <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+  </p>
+</div>
+
 
     </section><!-- /Hero Section -->
 
@@ -97,16 +170,16 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>28 November 2000</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.personalportfolio.bt</span></li>
+            
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://potfolio-nim2.onrender.com/</span></li> -->
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+975 77435262</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Thimphu, Bhutan</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>Bachelor's Degree in IT</span></li>
+                  
+                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>Bachelor's Degree in CS</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sangaychoden2800@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
@@ -121,17 +194,147 @@
       </div>
 
     </section><!-- /About Section -->
-
     
-   
+<!-- ===== SKILLS SECTION ===== -->
+<section id="skills" class="skills-grid">
+
+  <div class="container">
+
+    <div class="skills-title">
+      <h2>Technical Skills</h2>
+      <p>Frontend, Backend & Tools</p>
+    </div>
+
+    <!-- FRONTEND -->
+    <div class="skills-box">
+      <h3>Frontend</h3>
+      <div class="skills-card-grid">
+
+        <div class="skill-card">
+          <img src="assets/img/skills/react.png">
+          <span>React</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/javascript.png">
+          <span>JavaScript</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/html.png">
+          <span>HTML5</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/css.png">
+          <span>CSS3</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/tailwind.png">
+          <span>Tailwind</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/redux.png">
+          <span>Redux</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BACKEND -->
+    <div class="skills-box">
+      <h3>Backend & Database</h3>
+      <div class="skills-card-grid">
+
+        <div class="skill-card">
+          <img src="assets/img/skills/node.png">
+          <span>Node.js</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/express.png">
+          <span>Express</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/python.png">
+          <span>Python</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/java.png">
+          <span>Java</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/mongo.png">
+          <span>MongoDB</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/postgressdb.png">
+          <span>PostgreSQL</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="skills-box">
+      <h3>Tools & Deployment</h3>
+      <div class="skills-card-grid">
+
+        <div class="skill-card">
+          <img src="assets/img/skills/figma.png">
+          <span>Figma</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/git.png">
+          <span>Git</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/asana.jpg">
+          <span>Asana</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/docker.png">
+          <span>Docker</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/vercel.jpg">
+          <span>Vercel</span>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/img/skills/render.jpg">
+          <span>Render</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ===== END SKILLS SECTION ===== -->
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>A showcase of my recent work in UI/UX design and full-stack development. This portfolio features case studies that detail my process, from initial strategy and wireframing to final execution and successful deployment, demonstrating my commitment to solving complex problems effectively.</p>
-      </div><!-- End Section Title -->
+      </div>End Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+  <h2>Portfolio</h2>
+  <p>A collection of my UI/UX design projects, showcasing my approach to creating user-friendly and visually engaging experiences. Each project highlights my process from research and wireframing to final design, reflecting my dedication to solving design challenges effectively and professionally.</p>
+</div><!-- End Section Title -->
+
 
       <div class="container">
 
@@ -151,24 +354,100 @@
                 <img src="assets/img/portfolio/case study 1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Travel Diary</h4>
-                  <!-- <p>Built a user-friendly news platform for Bhutan with reader personalization and simple editor tools.</p> -->
-                  <!-- <a href="assets/img/portfolio/case study 1.png" title="Case Study 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                  <a href="case-study-2.html" title="Case Study 1" class="preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <!-- <a href="https://www.figma.com/proto/Mu8K1gOnX0RcvJMLF78eLK/Kuenselapp?node-id=6-6018&t=Zcq00YuQcI1wqe3L-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-               <a href="https://www.figma.com/proto/bJn6kRAsKhSPi7rBtWEmBh/Untitled?node-id=2-7&t=a5zoG7D1WGvfTKwe-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> 
+                  <div style="text-align:center; margin-top:10px; line-height:1.6;">
+  <!-- <a href="case-study-2.html"
+     style="font-size:14px; display:block; margin-bottom:5px;">
+     Case Study
+  </a>
+
+  <a href="https://www.figma.com/proto/bJn6kRAsKhSPi7rBtWEmBh/Untitled?node-id=2-7&t=a5zoG7D1WGvfTKwe-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"
+     style="font-size:14px; display:block;">
+     View Design
+  </a> -->
+  <style>
+  .btn-container {
+      margin-top: 40px; 
+    text-align: center;   /* centers the buttons */
+  }
+
+  .small-btn {
+    display: inline-block;
+    padding: 4px 10px;     /* smaller size */
+    font-size: 12px;       /* smaller text */
+    margin-bottom: 6px;
+    color: white;
+    background: #333;
+    border: 1px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .small-btn:hover {
+    background: white;
+    color: black;
+  }
+</style>
+
+<div class="btn-container">
+  <a href="case-study-2.html" class="small-btn">Case Study</a>
+
+  <a href="https://www.figma.com/proto/bJn6kRAsKhSPi7rBtWEmBh/Untitled?node-id=2-7&t=a5zoG7D1WGvfTKwe-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"
+     class="small-btn">View Design</a>
+</div>
+
+</div>
                   </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/case study 1.png" class="img-fluid" alt="">
+                <img src="assets/img/1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Kuensel App</h4>
+                 <style>
+  .btn-container {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .small-btn {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    margin-bottom: 6px;
+    color: white;
+    background: #333;
+    border: 1px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .small-btn:hover {
+    background: white;
+    color: black;
+  }
+</style>
+
+<div class="btn-container">
+  <a href="case-study-1.html" class="small-btn">Case Study</a>
+
+  <a href="https://www.figma.com/proto/Mu8K1gOnX0RcvJMLF78eLK/Kuenselapp?node-id=6-6018&t=Zcq00YuQcI1wqe3L-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+     class="small-btn">
+     View Design
+  </a>
+</div>
+
+  
+
+ 
+
                   <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                  <a href="case-study-1.html" title="Case Study 2" class="preview-link"><i class="bi bi-zoom-in"></i>
+                  <!-- <a href="case-study-1.html" title="Case Study 2" class="preview-link"><i class="bi bi-zoom-in"></i>
 </a>
-              <a href="https://www.figma.com/proto/Mu8K1gOnX0RcvJMLF78eLK/Kuenselapp?node-id=6-6018&t=Zcq00YuQcI1wqe3L-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <a href="https://www.figma.com/proto/Mu8K1gOnX0RcvJMLF78eLK/Kuenselapp?node-id=6-6018&t=Zcq00YuQcI1wqe3L-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
   
                 </div>
               </div>
@@ -176,17 +455,43 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/case study 1.png" class="img-fluid" alt="">
+                <img src="assets/img/hifi3.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Bus Booking Website</h4>
-                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                    <a href="case-study-3.html" title="Case Study 2" class="preview-link"><i class="bi bi-zoom-in"></i>
-                  <!-- <a href="assets/img/portfolio/case study 1.png" title="Case Study 3" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                <a href="https://www.figma.com/proto/ncCH9kPxDYNMh4s4f7S05g/BusbookingHIFI?node-id=1-964&t=YPZqjhE8YBIcu9SW-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1
-                
-                " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-  
+                  <style>
+  .btn-container {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .small-btn {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    margin-bottom: 6px;
+    color: white;
+    background: #333;
+    border: 1px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .small-btn:hover {
+    background: white;
+    color: black;
+  }
+</style>
+
+<div class="btn-container">
+  <a href="case-study-3.html" class="small-btn">Case Study</a>
+
+  <a href="https://www.figma.com/proto/ncCH9kPxDYNMh4s4f7S05g/BusbookingHIFI?node-id=1-964&t=YPZqjhE8YBIcu9SW-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+     class="small-btn">
+     View Design
+  </a>
+</div>
+
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
